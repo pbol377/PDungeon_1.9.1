@@ -330,9 +330,7 @@ class Main extends PluginBase implements Listener{
 			}
 		}
 		/* $version = json_decode(Internet::getUrl("http://********/", 10), true);
-		if($version[0]["version2"] != "1.7.9.4"){
-			$this->DoTask();
-		}
+		
 		
 
 
