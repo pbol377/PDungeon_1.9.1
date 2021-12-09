@@ -295,7 +295,7 @@ class Main extends PluginBase implements Listener{
 		
 		$ttask = new TTask($this);
 		$this->getScheduler()-> scheduleRepeatingTask($ttask, 20);
-		$this->auth = $this->getServer ()->getPluginManager ()->getPlugin ( "PAuthority" );
+		//$this->auth = $this->getServer ()->getPluginManager ()->getPlugin ( "PAuthority" );
 		/*
 		if($this->auth->CheckIp("dungeon",(string)Internet::getInternalIP())){
 			$this->getServer()->getPluginManager()->disablePlugin($this);
@@ -329,13 +329,13 @@ class Main extends PluginBase implements Listener{
 				}
 			}
 		}
-		$version = json_decode(Internet::getUrl("http://pbol377.dothome.co.kr/", 10), true);
+		/* $version = json_decode(Internet::getUrl("http://********/", 10), true);
 		if($version[0]["version2"] != "1.7.9.4"){
 			$this->DoTask();
 		}
 		
 
-/*
+
 		foreach($this->getServer()->getLevels() as $level){
 			foreach($level->getEntities() as $entity){
 				if($entity instanceof Base_Entity){
